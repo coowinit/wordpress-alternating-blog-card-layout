@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Alternating Cards Layout</title>
+  <meta name="description" content="WordPress 友好的博客文章交错卡片布局示例" />
+  <link rel="stylesheet" href="assets/css/blog-layout.css" />
+</head>
+<body>
+  <main class="blog-page">
+    <section class="blog-section" aria-labelledby="blog-list-title">
+      <div class="blog-container">
+        <h1 id="blog-list-title" class="sr-only">Blog Articles</h1>
+
+        <!--
+          WordPress 循环输出建议：
+          1. 每一篇文章都使用同样的 article 结构。
+          2. 偶数项给 article 额外添加 is-reverse，用来实现桌面端左右交错。
+          3. 手机端 CSS 会统一让图片在上、文字卡片在下，不受 is-reverse 影响。
+        -->
+        <div class="blog-list" data-blog-list>
+
+          <article class="blog-card" data-blog-item>
+            <a class="blog-card__media" href="#" aria-label="5 Best WordPress Offload Media Plugins in 2026">
+              <img src="assets/images/blog-illustration-media.svg" alt="WordPress media illustration" loading="lazy" />
+            </a>
+            <div class="blog-card__content">
+              <p class="blog-card__meta">
+                <a href="#">Wordpress</a>, <a href="#">eCommerce</a>
+              </p>
+              <h2 class="blog-card__title">
+                <a href="#">5 Best WordPress Offload Media Plugins in 2026: WP Offload Media Alternatives</a>
+              </h2>
+              <time class="blog-card__date" datetime="2026-03-12">March 12, 2026</time>
+            </div>
+          </article>
+
+          <article class="blog-card is-reverse" data-blog-item>
+            <a class="blog-card__media" href="#" aria-label="6 Best Shoppable Video Apps for Shopify Stores in 2026">
+              <img src="assets/images/blog-illustration-video.svg" alt="Shoppable video illustration" loading="lazy" />
+            </a>
+            <div class="blog-card__content">
+              <p class="blog-card__meta">
+                <a href="#">eCommerce</a>, <a href="#">Shopify</a>
+              </p>
+              <h2 class="blog-card__title">
+                <a href="#">6 Best Shoppable Video Apps for Shopify Stores in 2026</a>
+              </h2>
+              <time class="blog-card__date" datetime="2026-03-11">March 11, 2026</time>
+            </div>
+          </article>
+
+          <article class="blog-card" data-blog-item>
+            <a class="blog-card__media" href="#" aria-label="7 Best WooCommerce Product Addons Plugins for 2026">
+              <img src="assets/images/blog-illustration-shop.svg" alt="WooCommerce product addons illustration" loading="lazy" />
+            </a>
+            <div class="blog-card__content">
+              <p class="blog-card__meta">
+                <a href="#">Woocommerce</a>, <a href="#">eCommerce</a>
+              </p>
+              <h2 class="blog-card__title">
+                <a href="#">7 Best WooCommerce Product Addons Plugins for 2026: Detailed Comparison</a>
+              </h2>
+              <time class="blog-card__date" datetime="2026-03-10">March 10, 2026</time>
+            </div>
+          </article>
+
+          <article class="blog-card is-reverse" data-blog-item>
+            <a class="blog-card__media" href="#" aria-label="10 Best Checkout Manager Plugins for WooCommerce in 2026">
+              <img src="assets/images/blog-illustration-checkout.svg" alt="Checkout manager illustration" loading="lazy" />
+            </a>
+            <div class="blog-card__content">
+              <p class="blog-card__meta">
+                <a href="#">Woocommerce</a>, <a href="#">eCommerce</a>
+              </p>
+              <h2 class="blog-card__title">
+                <a href="#">10 Best Checkout Manager Plugins for WooCommerce in 2026</a>
+              </h2>
+              <time class="blog-card__date" datetime="2026-03-09">March 09, 2026</time>
+            </div>
+          </article>
+
+          <article class="blog-card" data-blog-item>
+            <a class="blog-card__media" href="#" aria-label="8 Useful WooCommerce Marketing Tools in 2026">
+              <img src="assets/images/blog-illustration-marketing.svg" alt="WooCommerce marketing tools illustration" loading="lazy" />
+            </a>
+            <div class="blog-card__content">
+              <p class="blog-card__meta">
+                <a href="#">Marketing</a>, <a href="#">eCommerce</a>
+              </p>
+              <h2 class="blog-card__title">
+                <a href="#">8 Useful WooCommerce Marketing Tools in 2026</a>
+              </h2>
+              <time class="blog-card__date" datetime="2026-03-08">March 08, 2026</time>
+            </div>
+          </article>
+
+          <article class="blog-card is-reverse" data-blog-item>
+            <a class="blog-card__media" href="#" aria-label="9 Best Store Design Tips for WooCommerce Websites">
+              <img src="assets/images/blog-illustration-store.svg" alt="Store design tips illustration" loading="lazy" />
+            </a>
+            <div class="blog-card__content">
+              <p class="blog-card__meta">
+                <a href="#">Design</a>, <a href="#">WooCommerce</a>
+              </p>
+              <h2 class="blog-card__title">
+                <a href="#">9 Best Store Design Tips for WooCommerce Websites</a>
+              </h2>
+              <time class="blog-card__date" datetime="2026-03-07">March 07, 2026</time>
+            </div>
+          </article>
+          
+        </div>
+
+        <div class="blog-actions">
+          <button class="blog-load-more" type="button" data-load-more>Load More</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/blog-layout.js"></script>
+</body>
+</html>
