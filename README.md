@@ -8,10 +8,6 @@
 
 ## 效果预览
 
-> 请将预览截图上传到以下路径：
->
-> `docs/screenshots/blog-card-layout-preview.png`
-
 ![WordPress 左右交错式博客卡片布局预览](docs/screenshots/blog-card-layout-preview.png)
 
 ---
